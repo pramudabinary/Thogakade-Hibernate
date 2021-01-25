@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="236.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <Label alignment="CENTER" prefHeight="59.0" prefWidth="682.0" text="ThogaKade">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="92.0" fitWidth="102.0" layoutX="40.0" layoutY="114.0" onMouseClicked="#openCustomerForm" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/img-customer.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXButton fx:id="btnCustomer" layoutX="49.0" layoutY="122.0" onAction="#openCustomerForm" prefHeight="76.0" prefWidth="83.0" text=" " />
+      <ImageView fitHeight="92.0" fitWidth="102.0" layoutX="215.0" layoutY="106.0" onMouseClicked="#openItemForm" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/img-item.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXButton fx:id="btnItem" layoutX="215.0" layoutY="122.0" onAction="#openItemForm" prefHeight="76.0" prefWidth="83.0" text=" " />
+      <ImageView fitHeight="92.0" fitWidth="102.0" layoutX="374.0" layoutY="114.0" onMouseClicked="#openOrderForm" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/img-order.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="92.0" fitWidth="102.0" layoutX="532.0" layoutY="114.0" onMouseClicked="#openPlaceOrderForm" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/img-place-order.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
